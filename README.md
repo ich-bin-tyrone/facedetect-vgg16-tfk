@@ -1,4 +1,4 @@
-# Face Tracker
+# 📸 Face Tracker
 
 ## Description
 This repository contains a face tracking application that captures facial images, trains a model using VGG16 architecture, and tests face detection in real-time.
