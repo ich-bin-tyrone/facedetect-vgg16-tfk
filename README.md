@@ -73,7 +73,4 @@ jupyter notebook model_test.ipynb
 ---
 
 ## 💡 Contributing  
-Contributions are welcome! Fork the repository and submit a pull request to contribute. 😊  
-
----
-Feel free to modify the repository URL and license details accordingly. 🚀  
+Feel free to contribute by submitting **issues** or **pull requests**! 😊  
