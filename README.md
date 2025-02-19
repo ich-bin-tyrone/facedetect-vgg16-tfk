@@ -82,6 +82,8 @@ jupyter notebook model_test.ipynb
 
   ![Demo](test.gif)
 
+  ![Demo](test-speed.gif)
+
 ---
 
 ## 📂 Folder Structure  
