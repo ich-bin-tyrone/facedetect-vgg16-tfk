@@ -1,55 +1,79 @@
-# 📸 Face Tracker
+# 📸 Face Tracker  
 
-## Description
-This repository contains a face tracking application that captures facial images, trains a model using VGG16 architecture, and tests face detection in real-time.
+## 📝 Description  
+This repository contains a face-tracking application that captures facial images, trains a model using the **VGG16** architecture, and tests face detection in real-time.  
 
-## Getting Started
+## 📦 Requirements  
 
-### Prerequisites
-- Python 3.x
-- Jupyter Notebook
-- TensorFlow
-- OpenCV
-- Albumentations
+Ensure you have the following installed:  
 
-Make sure to install the required libraries:
+- Python **3.x**  
+- Jupyter Notebook  
+- TensorFlow  
+- OpenCV  
+- Albumentations  
+
+You can install all required packages using:  
 ```bash
 pip install tensorflow opencv-python albumentations
 ```
 
-### Installation
-1. **Download the Repository**  
-   Clone or download the repository to your local machine.
+## 🔧 How to Use the Application  
 
-2. **Prepare the Data Folders**  
-   Delete all the photos and labels in the `data` and `aug_data` folders to start fresh.
+### **1️⃣ Download the Repository**  
+Clone or download the repository to your local machine:  
+```bash
+git clone <repository_link>
+cd <repository_directory>
+```
 
-3. **Capture Facial Images**  
-   Run `data.ipynb`:
-   ```bash
-   jupyter notebook data.ipynb
-   ```
-   This will prompt the webcam to capture photos of your face and generate corresponding JSON labels.
+### **2️⃣ Prepare the Data Folders**  
+Before starting, delete all the photos and labels in the `data` and `aug_data` folders to ensure a fresh start.  
 
-4. **Train the Model**  
-   Run `model.ipynb`:
-   ```bash
-   jupyter notebook model.ipynb
-   ```
-   - This will sort the images into `train`, `test`, and `val` folders.
-   - It will augment the images using Albumentations and store them in `aug_data`.
-   - After training, the model `facetracker_vgg16.h5` will be saved to your Desktop.
+### **3️⃣ Capture Facial Images**  
+Run the following command to start capturing facial images using your webcam:  
+```bash
+jupyter notebook data.ipynb
+```
+- This will prompt the webcam to capture photos of your face.
+- You will manually annotate the images using bounding boxes and properly labeling them.
+- JSON labels will be generated afterward containing the information on the annotations.  
 
-5. **Test the Face Detection App**  
-   Run `model_test.ipynb`:
-   ```bash
-   jupyter notebook model_test.ipynb
-   ```
-   This will allow you to test the face detection functionality using the trained model.
+### **4️⃣ Train the Model**  
+Start the model training process by running:  
+```bash
+jupyter notebook model.ipynb
+```
+- Images will be sorted into `train`, `test`, and `val` folders.  
+- Augmentation will be applied using **Albumentations**, with the results stored in `aug_data`.  
+- After training, the model will be saved as `facetracker_vgg16.h5` in your **Desktop directory**.  
 
-## Contributing
-Contributions are welcome! Feel free to fork the repository and submit pull requests.
+### **5️⃣ Test the Face Detection App**  
+To test face detection using the trained model, run:  
+```bash
+jupyter notebook model_test.ipynb
+```
+- This will allow you to validate the face-tracking functionality in real time.  
 
 ---
-Feel free to modify the repository URL and license details accordingly.
 
+## 📂 Folder Structure  
+```plaintext
+├── aug_data/         # Augmented images generated using Albumentations  
+├── data/             # Contains images and JSON files with bounding box & class info  
+├── logs/             # Stores callback logs during model training  
+├── data.ipynb        # Captures facial images and generates labels  
+├── model.ipynb       # Trains the VGG16-based face tracking model  
+├── model_test.ipynb  # Tests the trained model for face detection  
+├── README.md         # Project documentation  
+├── .DS_Store         # macOS system file (safe to ignore)  
+```
+
+
+---
+
+## 💡 Contributing  
+Contributions are welcome! Fork the repository and submit a pull request to contribute. 😊  
+
+---
+Feel free to modify the repository URL and license details accordingly. 🚀  
