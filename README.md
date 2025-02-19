@@ -85,18 +85,37 @@ jupyter notebook model_test.ipynb
 ## 📂 Folder Structure  
 ```plaintext
 ├── aug_data/         # Augmented images generated using Albumentations  
-├── data/             # Contains images and JSON files with bounding box & class info  
-│   ├── images/       # Raw captured images  
-│   ├── labels/       # JSON annotations from Labelme  
-├── logs/             # Stores callback logs during model training  
-├── data.ipynb        # Captures facial images and generates labels  
-├── model.ipynb       # Trains the VGG16-based face tracking model  
-├── model_test.ipynb  # Tests the trained model for face detection  
-├── README.md         # Project documentation  
-├── .DS_Store         # macOS system file (safe to ignore)  
-```
+│   ├── train/       # Augmented training data  
+│   │   ├── images/   # Augmented training images  
+│   │   ├── labels/   # Corresponding JSON labels  
+│   ├── test/        # Augmented test data  
+│   │   ├── images/   # Augmented test images  
+│   │   ├── labels/   # Corresponding JSON labels  
+│   ├── val/         # Augmented validation data  
+│   │   ├── images/   # Augmented validation images  
+│   │   ├── labels/   # Corresponding JSON labels  
+├── data/            # Raw captured images and annotations
+│   ├── images       # Original directory containing the images before the train-test-val split
+│   ├── labels       # Original directory containing the labels before the train-test-val split
+│   ├── train/       # Training data  
+│   │   ├── images/   # Raw training images  
+│   │   ├── labels/   # JSON annotations from Labelme  
+│   ├── test/        # Test data  
+│   │   ├── images/   # Raw test images  
+│   │   ├── labels/   # JSON annotations from Labelme  
+│   ├── val/         # Validation data  
+│   │   ├── images/   # Raw validation images  
+│   │   ├── labels/   # JSON annotations from Labelme  
+├── logs/            # Stores callback logs during model training  
+├── data.ipynb       # Captures facial images and generates labels  
+├── model.ipynb      # Trains the VGG16-based face tracking model  
+├── model_test.ipynb # Tests the trained model for face detection  
+├── README.md        # Project documentation  
+├── .DS_Store        # macOS system file (safe to ignore)  
+
 
 ---
 
 ## 💡 Contributing  
-Feel free to contribute by submitting **issues**
+Feel free to contribute by submitting **issues** or **pull requests**! 😊  
+
