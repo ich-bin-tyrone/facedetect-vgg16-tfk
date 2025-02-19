@@ -51,7 +51,7 @@ This will open the Labelme interface.
 #### **Load the Images**  
 - Navigate to the `data/images/` folder where your captured images are stored.  
 - Click **File** → **Change Output Directory** and select `data/labels/`.  
-- Click **File** again → **Save Automatically** to ensure annotations are saved automatically.  
+- Click **File** → **Save Automatically** to ensure annotations are saved automatically.  
 
 #### **Annotate Each Image**  
 - Click **Edit** → **Create Rectangle** to start drawing bounding boxes.  
