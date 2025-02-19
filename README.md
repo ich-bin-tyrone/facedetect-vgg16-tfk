@@ -80,8 +80,6 @@ jupyter notebook model_test.ipynb
 ```
 - This will allow you to validate the face-tracking functionality in real time.
 
-  ![Demo](test.gif)
-
   ![Demo](test-speed.gif)
 
 ---
