@@ -69,8 +69,8 @@ Start the model training process by running:
 ```bash
 jupyter notebook model.ipynb
 ```
-- Images will be sorted into `train`, `test`, and `val` folders.  
-- Augmentation will be applied using **Albumentations**, with the results stored in `aug_data/train,test,val/images` with the corresponding labels stored in `aug_data/train,test,val/labels`.  
+- Images and labels will be sorted into `train`, `test`, and `val` folders.  
+- Augmentation will be applied using **Albumentations**, with the augmented images stored in `aug_data/{train,test,val}/images` and their corresponding labels saved in `aug_data/{train,test,val}/labels`.
 - After training, the model will be saved as `facetracker_vgg16.h5` in your **Desktop directory**.  
 
 ### **6️⃣ Test the Face Detection App**  
